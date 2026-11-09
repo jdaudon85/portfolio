@@ -136,7 +136,7 @@ main{padding-block:28px 24px}
 
 
 
-.hero-split{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr);gap:48px;align-items:center}
+.hero-split{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.8fr);gap:76px;align-items:center}
 .hero-text{display:grid;gap:22px;min-width:0}
 .hero-text h1{margin:0;max-width:none;font-size:clamp(34px,5.4vw,78px)}
 .hero-text h1 .l{display:block;white-space:nowrap}
@@ -145,6 +145,8 @@ main{padding-block:28px 24px}
 .hero-photo .hero-art{width:100%;height:auto;display:block;overflow:visible}
 .hp-float{animation:hpFloat 7s ease-in-out infinite;transform-box:view-box}
 .hp-float2{animation:hpFloat2 5.5s ease-in-out infinite;transform-box:view-box}
+.hp-ping{animation:hpPing 2.4s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes hpPing{0%{transform:scale(.4);opacity:.9}100%{transform:scale(1.6);opacity:0}}
 @keyframes hpFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @keyframes hpFloat2{0%,100%{transform:translate(0,0)}50%{transform:translate(4px,-7px)}}
 .hero-photo figcaption{position:absolute;left:14px;bottom:14px;display:flex;gap:6px;flex-wrap:wrap}
@@ -288,91 +290,93 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap hero-split">
     <div class="hero-text">
       <div class="eyebrow"><span class="dot"></span> Portfolio web · Jimmy Daudon · 2022 → aujourd'hui</div>
-      <h1><span class="l">Des sites pensés</span> <span class="l">pour les pros, <span class="num">dessinés</span></span> <span class="l">pour leurs clients.</span></h1>
+      <h1><span class="l">Des sites web conçus</span> <span class="l">pour <span class="num">valoriser</span></span> <span class="l">chaque activité.</span></h1>
       <p class="lede">Design, UI et UX : je m'imprègne de chaque métier pour lui donner sa meilleure version web. Depuis 2022, chez Strat Engine puis chez Saycom, pour des artisans du bâtiment, des campings, des cabinets d'experts, des éditeurs de logiciels ERP… <strong>Choisissez un parcours, puis cliquez sur une carte pour visiter le site en direct.</strong></p>
     </div>
     <figure class="hero-photo">
       <svg class="hero-art" viewBox="0 100 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="art-t">
-  <title id="art-t">Illustration UI et UX : interfaces en verre lumineuses</title>
+  <title id="art-t">Illustration : un même site décliné sur ordinateur, tablette et mobile</title>
   <defs>
-    <linearGradient id="hpGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A1D17" stop-opacity=".92"/><stop offset="1" stop-color="#100C0A" stop-opacity=".92"/></linearGradient>
-    <linearGradient id="hpGlassBack" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF8A3D" stop-opacity=".28"/><stop offset="1" stop-color="#B8410E" stop-opacity=".12"/></linearGradient>
+    <linearGradient id="hpGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A1D17" stop-opacity=".95"/><stop offset="1" stop-color="#100C0A" stop-opacity=".95"/></linearGradient>
+    <linearGradient id="hpGlassBack" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF8A3D" stop-opacity=".26"/><stop offset="1" stop-color="#B8410E" stop-opacity=".1"/></linearGradient>
     <linearGradient id="hpEdge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD2B0"/><stop offset=".5" stop-color="#FF7A33" stop-opacity=".5"/><stop offset="1" stop-color="#4FD8FF"/></linearGradient>
     <linearGradient id="hpImg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB06B"/><stop offset="1" stop-color="#E8461E"/></linearGradient>
-    <linearGradient id="hpBtn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFA24C"/><stop offset="1" stop-color="#F0621F"/></linearGradient>
-    <linearGradient id="hpLetter" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE1C7"/><stop offset="1" stop-color="#FF6A1F"/></linearGradient>
-    <linearGradient id="hpLetterX" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C6F6FF"/><stop offset="1" stop-color="#3FC4F0"/></linearGradient>
+    <linearGradient id="hpBtn" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFA24C"/><stop offset="1" stop-color="#E8301E"/></linearGradient>
+    <linearGradient id="hpCyan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C6F6FF"/><stop offset="1" stop-color="#3FC4F0"/></linearGradient>
     <linearGradient id="hpFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/></linearGradient>
     <mask id="hpReflMask" maskUnits="userSpaceOnUse" x="0" y="538" width="600" height="170"><rect x="0" y="538" width="600" height="170" fill="url(#hpFade)"/></mask>
     <filter id="hpNeon" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="hpSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="hpSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="16"/></filter>
     <filter id="hpReflBlur"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <!-- one site mockup reused on each screen -->
+    <symbol id="hpSite" viewBox="0 0 200 260">
+      <rect width="200" height="260" fill="#16100D"/>
+      <rect x="0" y="0" width="200" height="22" fill="#21170F"/>
+      <rect x="10" y="8" width="26" height="6" rx="3" fill="#FF8A3D"/>
+      <rect x="128" y="8" width="16" height="6" rx="3" fill="#fff" fill-opacity=".25"/><rect x="150" y="8" width="16" height="6" rx="3" fill="#fff" fill-opacity=".25"/><rect x="172" y="6" width="20" height="10" rx="5" fill="url(#hpBtn)"/>
+      <rect x="0" y="22" width="200" height="110" fill="url(#hpImg)"/>
+      <path d="M0 112 L52 70 L92 100 L128 76 L200 120 L200 132 L0 132 Z" fill="#8A2A08" fill-opacity=".55"/>
+      <circle cx="166" cy="48" r="11" fill="#FFF3EA" fill-opacity=".9"/>
+      <rect x="12" y="44" width="92" height="12" rx="4" fill="#fff"/>
+      <rect x="12" y="60" width="70" height="12" rx="4" fill="#fff"/>
+      <rect x="12" y="82" width="52" height="14" rx="7" fill="#16100D"/>
+      <rect x="12" y="146" width="56" height="44" rx="8" fill="#2A1D17" stroke="#FF8A3D" stroke-opacity=".5"/>
+      <rect x="72" y="146" width="56" height="44" rx="8" fill="#2A1D17" stroke="#FF8A3D" stroke-opacity=".5"/>
+      <rect x="132" y="146" width="56" height="44" rx="8" fill="#2A1D17" stroke="#4FD8FF" stroke-opacity=".6"/>
+      <circle cx="26" cy="160" r="6" fill="#FF8A3D"/><circle cx="86" cy="160" r="6" fill="#FF8A3D"/><circle cx="146" cy="160" r="6" fill="#4FD8FF"/>
+      <rect x="20" y="174" width="38" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="80" y="174" width="38" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="140" y="174" width="38" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/>
+      <rect x="12" y="204" width="120" height="7" rx="3.5" fill="#fff" fill-opacity=".22"/>
+      <rect x="12" y="218" width="96" height="7" rx="3.5" fill="#fff" fill-opacity=".14"/>
+      <rect x="12" y="234" width="64" height="16" rx="8" fill="url(#hpBtn)"/>
+    </symbol>
   </defs>
 
-  <!-- soft color halo (no background) -->
-  <ellipse cx="320" cy="330" rx="230" ry="190" fill="#FF7A2E" opacity=".3" filter="url(#hpSoft)"/>
-  <ellipse cx="460" cy="470" rx="120" ry="80" fill="#3FC4F0" opacity=".18" filter="url(#hpSoft)"/>
+  <ellipse cx="300" cy="340" rx="240" ry="180" fill="#FF7A2E" opacity=".28" filter="url(#hpSoft)"/>
+  <ellipse cx="470" cy="470" rx="110" ry="80" fill="#3FC4F0" opacity=".2" filter="url(#hpSoft)"/>
 
   <g id="hpScene">
     <g class="hp-float">
-      <!-- UI letters -->
-      <text x="20" y="390" font-family="Bricolage Grotesque, Arial Black, sans-serif" font-weight="800" font-size="150" letter-spacing="-6" fill="url(#hpLetter)" filter="url(#hpNeon)">UI</text>
-
-      <!-- stacked back panels (depth) -->
-      <g transform="skewY(-6)">
-        <rect x="196" y="130" width="300" height="330" rx="20" fill="url(#hpGlassBack)" stroke="#FFB06B" stroke-opacity=".45"/>
-        <rect x="178" y="150" width="300" height="330" rx="20" fill="url(#hpGlassBack)" stroke="#FFB06B" stroke-opacity=".5"/>
-
-        <!-- main panel -->
-        <rect x="160" y="172" width="300" height="330" rx="20" fill="url(#hpGlass)" stroke="url(#hpEdge)" stroke-width="1.6"/>
-        <circle cx="184" cy="194" r="4.5" fill="#FFB06B"/><circle cx="200" cy="194" r="4.5" fill="#F0621F"/><circle cx="216" cy="194" r="4.5" fill="#fff" fill-opacity=".35"/>
-        <!-- tool rail -->
-        <rect x="176" y="214" width="46" height="200" rx="12" fill="#fff" fill-opacity=".05" stroke="#FFD2B0" stroke-opacity=".3"/>
-        <rect x="188" y="230" width="22" height="22" rx="6" fill="url(#hpImg)"/>
-        <circle cx="199" cy="282" r="11" fill="none" stroke="#FFD2B0" stroke-width="2.2"/>
-        <text x="199" y="333" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="24" fill="#FFD2B0">T</text>
-        <!-- image -->
-        <rect x="236" y="214" width="208" height="128" rx="12" fill="url(#hpImg)"/>
-        <path d="M236 316 L290 262 L330 300 L364 272 L444 330 L444 342 L236 342 Z" fill="#8A2A08" fill-opacity=".6"/>
-        <circle cx="408" cy="244" r="14" fill="#FFF3EA" fill-opacity=".9"/>
-        <!-- buttons -->
-        <rect x="236" y="358" width="110" height="32" rx="10" fill="url(#hpBtn)" filter="url(#hpNeon)"/>
-        <rect x="356" y="358" width="88" height="32" rx="10" fill="#5A2410" stroke="#FFD2B0" stroke-opacity=".5"/>
-        <g fill="#FFF0E4"><circle cx="394" cy="370" r="4"/><circle cx="406" cy="370" r="4"/><rect x="388" y="377" width="24" height="6" rx="3"/></g>
-        <!-- slider -->
-        <rect x="236" y="430" width="208" height="4" rx="2" fill="#fff" fill-opacity=".15"/>
-        <rect x="236" y="430" width="96" height="4" rx="2" fill="#F0621F"/>
-        <circle cx="332" cy="432" r="7" fill="#5FE0FF" filter="url(#hpNeon)"/>
+      <!-- desktop -->
+      <g transform="skewY(-5)">
+        <rect x="70" y="170" width="360" height="270" rx="18" fill="url(#hpGlassBack)" stroke="#FFB06B" stroke-opacity=".45" transform="translate(16 -16)"/>
+        <rect x="70" y="170" width="360" height="270" rx="18" fill="url(#hpGlass)" stroke="url(#hpEdge)" stroke-width="1.6"/>
+        <circle cx="92" cy="190" r="4.5" fill="#FF8A3D"/><circle cx="107" cy="190" r="4.5" fill="#FFB06B" fill-opacity=".7"/><circle cx="122" cy="190" r="4.5" fill="#fff" fill-opacity=".35"/>
+        <rect x="140" y="184" width="150" height="12" rx="6" fill="#fff" fill-opacity=".08"/>
+        <svg x="84" y="206" width="332" height="222" viewBox="0 0 200 134" preserveAspectRatio="xMidYMin slice"><use href="#hpSite" width="200" height="260"/></svg>
       </g>
-
-      <!-- side card -->
-      <g transform="skewY(-6)">
-        <rect x="474" y="230" width="104" height="130" rx="14" fill="url(#hpGlass)" stroke="url(#hpEdge)" stroke-width="1.4"/>
-        <circle cx="492" cy="252" r="4" fill="#FFD2B0"/><rect x="502" y="248" width="60" height="8" rx="4" fill="#fff" fill-opacity=".35"/>
-        <circle cx="492" cy="274" r="4" fill="#FFD2B0"/><rect x="502" y="270" width="48" height="8" rx="4" fill="#fff" fill-opacity=".2"/>
-        <rect x="490" y="294" width="72" height="8" rx="4" fill="#5FE0FF" fill-opacity=".8"/>
-        <rect x="490" y="318" width="72" height="22" rx="8" fill="url(#hpBtn)"/>
+      <!-- tablet -->
+      <g class="hp-float2" transform="skewY(-5)">
+        <rect x="380" y="270" width="150" height="200" rx="18" fill="url(#hpGlass)" stroke="url(#hpEdge)" stroke-width="1.6"/>
+        <svg x="390" y="282" width="130" height="176" viewBox="0 0 200 270" preserveAspectRatio="xMidYMin slice"><use href="#hpSite" width="200" height="260"/></svg>
       </g>
-
-      <!-- swatches card -->
-      <g transform="skewY(-6)">
-        <rect x="438" y="420" width="140" height="92" rx="14" fill="url(#hpGlass)" stroke="url(#hpEdge)" stroke-width="1.4"/>
-        <g><circle cx="462" cy="448" r="9" fill="#FFB06B"/><circle cx="490" cy="448" r="9" fill="#F0621F"/><circle cx="518" cy="448" r="9" fill="#E8461E"/><circle cx="546" cy="448" r="9" fill="#5FE0FF"/>
-        <circle cx="462" cy="480" r="9" fill="#FF8A3D"/><circle cx="490" cy="480" r="9" fill="#FFA24C"/><circle cx="518" cy="480" r="9" fill="#3FC4F0"/><circle cx="546" cy="480" r="9" fill="#FFF0E4"/></g>
+      <!-- phone -->
+      <g class="hp-float2" transform="skewY(-5)">
+        <rect x="30" y="330" width="96" height="180" rx="18" fill="url(#hpGlass)" stroke="#5FE0FF" stroke-opacity=".8" stroke-width="1.6"/>
+        <rect x="62" y="338" width="32" height="5" rx="2.5" fill="#fff" fill-opacity=".25"/>
+        <svg x="38" y="350" width="80" height="150" viewBox="0 0 200 375" preserveAspectRatio="xMidYMin slice"><use href="#hpSite" width="200" height="260"/></svg>
       </g>
-
-      <!-- UX mini card (journey) -->
-      <g class="hp-float2">
-        <rect x="40" y="430" width="150" height="100" rx="16" fill="url(#hpGlass)" stroke="#5FE0FF" stroke-opacity=".7" stroke-width="1.4"/>
-        <text x="56" y="462" font-family="Bricolage Grotesque, Arial Black, sans-serif" font-weight="800" font-size="24" fill="url(#hpLetterX)">UX</text>
-        <path d="M56 510 C 80 500, 92 480, 112 486 S 140 500, 160 470 S 172 456, 176 452" fill="none" stroke="#5FE0FF" stroke-width="2.4" filter="url(#hpNeon)"/>
-        <g fill="#100C0A" stroke="#9EEBFF" stroke-width="2"><circle cx="76" cy="504" r="4"/><circle cx="112" cy="486" r="4"/><circle cx="160" cy="470" r="4"/></g>
+      <!-- cursor clicking the call-to-action -->
+      <g transform="translate(250 300)">
+        <circle r="16" fill="none" stroke="#FFD2B0" stroke-opacity=".7" stroke-width="2" class="hp-ping"/>
+        <path d="M0 0 L0 26 L7 19 L12 30 L17 28 L12 17 L22 17 Z" fill="#fff" stroke="#16100D" stroke-width="1.5" stroke-linejoin="round"/>
+      </g>
+      <!-- chips -->
+      <g font-family="Geist Mono, ui-monospace, monospace" font-size="12" font-weight="500" letter-spacing=".6">
+        <g transform="translate(432 160)"><rect width="120" height="30" rx="15" fill="url(#hpGlass)" stroke="url(#hpEdge)"/><circle cx="16" cy="15" r="4" fill="#5FE0FF" filter="url(#hpNeon)"/><text x="28" y="19.5" fill="#FFE1C7">RESPONSIVE</text></g>
+        <g transform="translate(18 236)"><rect width="74" height="30" rx="15" fill="url(#hpGlass)" stroke="url(#hpEdge)"/><circle cx="16" cy="15" r="4" fill="#FF8A3D" filter="url(#hpNeon)"/><text x="28" y="19.5" fill="#FFE1C7">UI/UX</text></g>
+        <g transform="translate(456 500)"><rect width="70" height="30" rx="15" fill="url(#hpGlass)" stroke="url(#hpEdge)"/><circle cx="16" cy="15" r="4" fill="#FFA24C" filter="url(#hpNeon)"/><text x="28" y="19.5" fill="#FFE1C7">SEO</text></g>
+      </g>
+      <!-- rating card -->
+      <g transform="translate(176 456)">
+        <rect width="170" height="56" rx="14" fill="url(#hpGlass)" stroke="url(#hpEdge)"/>
+        <text x="16" y="26" font-family="Bricolage Grotesque, Arial Black, sans-serif" font-weight="800" font-size="20" fill="url(#hpCyan)">4,9</text>
+        <g fill="#FFA24C" transform="translate(54 13)"><path d="M6 0l1.8 3.9 4.2.5-3.1 2.9.8 4.2L6 9.4 2.3 11.5l.8-4.2L0 4.4l4.2-.5z"/><path transform="translate(15 0)" d="M6 0l1.8 3.9 4.2.5-3.1 2.9.8 4.2L6 9.4 2.3 11.5l.8-4.2L0 4.4l4.2-.5z"/><path transform="translate(30 0)" d="M6 0l1.8 3.9 4.2.5-3.1 2.9.8 4.2L6 9.4 2.3 11.5l.8-4.2L0 4.4l4.2-.5z"/><path transform="translate(45 0)" d="M6 0l1.8 3.9 4.2.5-3.1 2.9.8 4.2L6 9.4 2.3 11.5l.8-4.2L0 4.4l4.2-.5z"/><path transform="translate(60 0)" d="M6 0l1.8 3.9 4.2.5-3.1 2.9.8 4.2L6 9.4 2.3 11.5l.8-4.2L0 4.4l4.2-.5z"/></g>
+        <rect x="16" y="36" width="120" height="6" rx="3" fill="#fff" fill-opacity=".22"/>
       </g>
     </g>
   </g>
 
-  <!-- floor line + reflection -->
-  <ellipse cx="320" cy="538" rx="250" ry="10" fill="#FF7A2E" opacity=".25" filter="url(#hpSoft)"/>
+  <ellipse cx="300" cy="538" rx="250" ry="10" fill="#FF7A2E" opacity=".25" filter="url(#hpSoft)"/>
   <g mask="url(#hpReflMask)" filter="url(#hpReflBlur)">
     <use href="#hpScene" transform="translate(0 1076) scale(1 -1)"/>
   </g>
